@@ -7,7 +7,11 @@
 //
 
 import UIKit
+import Alamofire
 
-class MyFirstTest: NSObject {
+public class MyFirstTest {
 
+    public func testfn() {
+        _ = Alamofire.request("https://httpbin.org/get")
+    }
 }
