@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2A07E61F27274F00BF0090 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2A07E51F27274F00BF0090 /* Alamofire.framework */; };
 		CB4759381F222690008C854D /* MyFirstTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4759371F222690008C854D /* MyFirstTest.swift */; };
-		CB4759711F22475C008C854D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4759641F22474D008C854D /* Alamofire.framework */; };
 		CBE3764B1F221D00004039F5 /* Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE376411F221D00004039F5 /* Test.framework */; };
 		CBE376501F221D00004039F5 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3764F1F221D00004039F5 /* TestTests.swift */; };
 		CBE376521F221D00004039F5 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = CBE376441F221D00004039F5 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB2A07E51F27274F00BF0090 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CB4759371F222690008C854D /* MyFirstTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFirstTest.swift; sourceTree = "<group>"; };
 		CB4759581F22474D008C854D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Dependency/Carthage/Checkouts/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		CBE376411F221D00004039F5 /* Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4759711F22475C008C854D /* Alamofire.framework in Frameworks */,
+				CB2A07E61F27274F00BF0090 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +108,7 @@
 		CB47591A1F2225A4008C854D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB2A07E51F27274F00BF0090 /* Alamofire.framework */,
 				CB4759581F22474D008C854D /* Alamofire.xcodeproj */,
 			);
 			name = Frameworks;
@@ -466,6 +468,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +492,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
